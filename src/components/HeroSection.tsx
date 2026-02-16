@@ -1,8 +1,10 @@
 import { ShinyButton } from "@/components/ui/shiny-button"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
 export function HeroSection() {
+  const navigate = useNavigate()
   return (
     <section className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -31,7 +33,7 @@ export function HeroSection() {
             ребёнок полюбит русский язык и станет грамотнее за первые недели занятий.
           </p>
 
-          <ShinyButton className="text-base px-8">
+          <ShinyButton className="text-base px-8" onClick={() => navigate("/task")}>
             Начать бесплатно
             <ArrowRight className="ml-2 h-4 w-4" />
           </ShinyButton>
