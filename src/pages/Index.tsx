@@ -26,37 +26,37 @@ export default function Index() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold mb-4">LaunchPad</h3>
+              <h3 className="font-bold mb-4">Буквоёжка</h3>
               <p className="text-sm text-muted-foreground">
-                Строим будущее продуктивности с помощью ИИ-инструментов.
+                Развивающая программа по русскому языку для учеников начальной школы.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Продукт</h4>
+              <h4 className="font-semibold mb-4">Программа</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    Возможности
+                  <a href="#features" className="hover:text-foreground transition-colors">
+                    Преимущества
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
+                  <a href="#pricing" className="hover:text-foreground transition-colors">
                     Тарифы
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-foreground transition-colors">
-                    Безопасность
+                    Методика
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Компания</h4>
+              <h4 className="font-semibold mb-4">Родителям</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <a href="#" className="hover:text-foreground transition-colors">
-                    О нас
+                  <a href="#about" className="hover:text-foreground transition-colors">
+                    О программе
                   </a>
                 </li>
                 <li>
@@ -66,7 +66,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-foreground transition-colors">
-                    Вакансии
+                    Отзывы
                   </a>
                 </li>
               </ul>
@@ -81,7 +81,7 @@ export default function Index() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-foreground transition-colors">
-                    Условия
+                    Оферта
                   </a>
                 </li>
                 <li>
@@ -93,7 +93,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-            &copy; 2025 LaunchPad. Все права защищены.
+            &copy; 2026 Буквоёжка. Все права защищены.
           </div>
         </div>
       </footer>

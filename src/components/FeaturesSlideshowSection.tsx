@@ -5,29 +5,30 @@ import { Button } from "@/components/ui/button"
 const slides = [
   {
     id: 1,
-    title: "Поставщики",
+    title: "Для учеников 1 класса",
     description:
-      "Получайте оплату сразу, предоставьте клиентам гибкие платежи и оставьте заботу о сборе платежей нам. Партнерский канал одобрен.",
+      "Знакомство с буквами, звуками и первыми правилами. Яркие картинки, простые задания и много поощрений за каждый маленький успех.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 2,
-    title: "Реселлеры",
-    description: "Сократите закрытие сделок с недель до минут благодаря простому финансированию и быстрым выплатам.",
+    title: "Для учеников 2 класса",
+    description:
+      "Правописание «жи-ши», «ча-ща», безударные гласные. Задания усложняются — но остаются увлекательными и понятными.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 3,
-    title: "Покупатели",
+    title: "Для учеников 3 класса",
     description:
-      "Дайте клиентам доступ к технологиям и услугам, которые им нужны для успеха, с гибкими вариантами оплаты.",
+      "Части речи, состав слова, развитие письменной речи. Ребёнок учится строить предложения и писать мини-сочинения.",
     image: "/placeholder.svg?height=400&width=600",
   },
   {
     id: 4,
-    title: "Бизнес-решения",
+    title: "Для учеников 4 класса",
     description:
-      "Масштабируйте бизнес с решениями корпоративного уровня, индивидуальными условиями и поддержкой для крупных сделок.",
+      "Подготовка к ВПР: орфография, пунктуация, работа с текстом. Системное повторение и закрепление всех тем начальной школы.",
     image: "/placeholder.svg?height=400&width=600",
   },
 ]
@@ -43,7 +44,6 @@ export function FeaturesSlideshowSection() {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
-  // Calculate which slides to show (current + next 1 or 2 depending on screen size)
   const getVisibleSlides = () => {
     const visible = []
     for (let i = 0; i < 3; i++) {
@@ -57,7 +57,7 @@ export function FeaturesSlideshowSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-start justify-between mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-balance max-w-2xl">
-            Выигрыш для бизнеса, партнеров и клиентов
+            Программа для каждого класса начальной школы
           </h2>
           <div className="flex gap-2">
             <Button
@@ -97,7 +97,6 @@ export function FeaturesSlideshowSection() {
           </div>
         </div>
 
-        {/* Slide indicators */}
         <div className="flex justify-center gap-2 mt-8">
           {slides.map((_, idx) => (
             <button
